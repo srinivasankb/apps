@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<title></title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style type="text/css">
+<!--
+#container{
+    width:670px;
+    height:130px;
+    border:px solid #000; 
+    overflow:hidden;
+    margin:auto;
+}
+#container iframe {
+    width:670px;
+    height:500px;
+    margin-left:-20px;
+    margin-top:-300px;   
+
+    border:0 solid;
+ }
+-->
+</style>
+
+ <script>
+ window.setInterval("reloadIFrame();", 3000);
+
+ function reloadIFrame() {
+  document.frames["stats"].location.reload();
+ }
+ </script> 
+ 
+ <script>
+function startTime() {
+  var today = new Date();
+  var h = today.getHours();
+  var m = today.getMinutes();
+  var s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =
+  h + ":" + m + ":" + s;
+  var t = setTimeout(startTime, 500);
+}
+function checkTime(i) {
+  if (i < 10) {i = "0" + i}; 
+  return i;
+}
+</script>
+
+<body onload="startTime()">
+<center><h3>News Live</h3>
+<iframe width="432" height="243" src="https://www.youtube.com/embed/YwQHqhRI6nE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+<iframe width="432" height="243" src="https://www.youtube.com/embed/l_NIgnb9J2g" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<h3>Live Stats</h3>
+
+<div id="container">
+<iframe id="stats" src="https://www.covid19india.org/" scrolling="no"></iframe>
+</div>
+<h3><div id="txt"></div></h3>
+
+</center>
+</body>
+
+</html>
+
