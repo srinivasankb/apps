@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+p {
+  color:white;
+  text-align: center;
+  font-size: 120px;
+  margin-top: 0px;
+}
+</style>
+</head>
+<body style="background-color:black;" "color:white;">
+<center><br>
+<font color="white"><h1>Total Lockdown</h1>
+<h3>ends in</h3></font>
+</center>
+
+<p id="timer"></p>
+
+<script>
+
+var countDownDate = new Date("Apr 15, 2020 00:00:00").getTime();
+var x = setInterval(function() {
+var now = new Date().getTime();
+
+var distance = countDownDate - now;
+    
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+  
+  document.getElementById("timer").innerHTML = "<b>"+days+"</b>" + " Days, <br>" +"<b>"+ hours + ":"
+  + minutes + ":" + seconds+"</b> Hours";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer").innerHTML = "LOCKDOWN OVER";
+  }
+}, 1000);
+</script>
+<font color="white"><center>By Srinivasan KB</center></font>
+
+</body>
+</html>
+
