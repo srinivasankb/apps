@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+ <title>Send WhatsApp message without saving the number | Srinivasan KB</title>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+input[type=number], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+div {
+  border-radius: 5px;
+  background-color: #F5FAF4;
+  padding: 20px;
+}
+</style>
+<body>
+
+<div></br><br/>
+<center><font face="verdana" size="4">Send WhatsApp message without saving the number</font></br>
+</center></br>
+  <form action="javascript:myFunction(); return false;">
+    <input type="number" id="phnumber" name="phonenumber" placeholder="Enter WhatsApp Number...">
+  
+    <input onclick="window.open('https://api.whatsapp.com/send?phone=91'+document.getElementById('phnumber').value)" type="submit" value="Continue">
+  </form><br/><br/>
+  <center><font face="verdana" size="2">Made by
+<a href="https://www.srinivasan.online/" title="srini">Srinivasan KB</a></font><center/><br/>
+</div>
+
+</body>
+</html>
