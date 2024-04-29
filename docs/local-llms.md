@@ -1,0 +1,7 @@
+---
+description: Applications and Resources related to running LLMs in local (Mac in my case)
+---
+
+# Local LLMs
+
+<table data-view="cards"><thead><tr><th></th><th></th><th data-type="content-ref"></th><th><select><option value="LKAwqTXnmtUA" label="Free" color="blue"></option><option value="BBzE1hSAZUMo" label="Paid" color="blue"></option><option value="wDH0Om7mwEE9" label="Freemium" color="blue"></option></select></th><th><select multiple><option value="bJkWyZdp5sIk" label="LLM" color="blue"></option><option value="4rd2l1xzcFKc" label="AI" color="blue"></option><option value="gHng6kCcLMua" label="Automation" color="blue"></option><option value="ADfZJqyhiVmZ" label="Workflow" color="blue"></option></select></th></tr></thead><tbody><tr><td>Ollama</td><td><p>Run models in local.</p><p>Supports latest models including Llama 3, Phi 3,  Mistral and Gemma.</p></td><td><a href="https://ollama.com/">https://ollama.com/</a></td><td><span data-option="LKAwqTXnmtUA">Free</span></td><td><span data-option="4rd2l1xzcFKc">AI, </span><span data-option="bJkWyZdp5sIk">LLM</span></td></tr><tr><td>Open WebUI</td><td>Offline Self hosted UI for local LLM runners like Ollama</td><td><a href="https://openwebui.com/">https://openwebui.com/</a></td><td><span data-option="LKAwqTXnmtUA">Free</span></td><td><span data-option="bJkWyZdp5sIk">LLM, </span><span data-option="4rd2l1xzcFKc">AI</span></td></tr><tr><td></td><td></td><td></td><td></td><td></td></tr></tbody></table>
